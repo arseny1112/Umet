@@ -1,0 +1,30 @@
+.card-block{
+    max-width: 416px;
+}
+.frame-img{
+    display: flex;
+    height: 320px;
+}
+.frame-block{
+    width: 396px;
+    height: 300px;
+    border: 1px solid var(--accent, #CDAA7D);
+    opacity: 0.5;
+    z-index: 1;
+    margin: 0 0 0 20px;
+    position: relative;
+}
+.img-block{
+    width: 396px;
+    height: 300px;
+    margin: 20px 0 0;
+    position: absolute;
+    z-index: 3;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+}
+.block-text{
+    color: var(--white, #FFF);
+    margin-top: 30px;
+    font-family:  'CormorantGaramond-Regular';
+    font-size: 30px;
+}

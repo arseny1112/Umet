@@ -1,0 +1,9 @@
+/* style.css */
+.map-container div{
+  width: 100% !important;
+  height: 400px !important;
+}
+.ymaps-2-1-79-map{
+  width: 100% !important;
+  height: 400px !important;
+}

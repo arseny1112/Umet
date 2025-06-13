@@ -1,0 +1,117 @@
+/*--------шрифты----------------------------*/
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoSerif-Bold';
+    src: url(../../fonts/RobotoSerif_28pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoSerif-Medium';
+    src: url(../../fonts/RobotoSerif_28pt-Medium.ttf);
+}
+
+/*--------обнуление стилей------------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button {
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*------------общий блок--------------------------*/
+.wrapper {
+    overflow: hidden;
+    background: #eae3d2;
+    color: #611922;
+}
+
+._container {
+   
+    margin: 0 auto;
+}
+
+/*------------текст--------------------------*/
+.footer{
+    width: 100%;
+       color: #eae3d2;
+    background: #611922;
+    padding: 60px 0;
+}
+.footerContent{
+    max-width: 1350px;
+    display: flex;
+ 
+    justify-content: space-between;
+}
+.logo{
+    max-width: 348px; 
+    height: 86px;
+
+}
+
+.text-serif20b{
+ font-family: 'RobotoSerif-Bold';
+ font-size: 20px;
+}
+.roboto-reg16{
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+}
+.list-menuFooter{
+    margin: 15px 0 0;
+    display: grid;
+    gap: 10px;
+}
+._text-line{
+text-decoration: underline;
+text-decoration-skip-ink: none;
+}
+._m40{
+margin: 40px 0 0;
+}
