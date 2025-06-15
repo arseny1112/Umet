@@ -77,13 +77,24 @@ a {
 }
 
 /*------------текст--------------------------*/
+header#main-header {
+  position: fixed; /* Фиксированное позиционирование */
+  top: 0;          /* Прикрепить к верху страницы */
+  left: 0;         /* Прикрепить к левому краю страницы */
+  width: 100%;       /* Занять всю ширину страницы */
+  background: #eae3d2; /* Пример: белый фон */
+  z-index: 1000;     /* Убедитесь, что шапка находится поверх остального контента */
+  padding: 10px 0;  /* Отступы сверху и снизу (пример: 10px) */
+}
 .header{
-    margin: 40px auto 0;
-     max-width: 1350px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1350px; /* Пример: максимальная ширина контента */
+  margin: 40px auto;   /* Центрирование контейнера */
+  display: flex;    /* Включаем flexbox */
+  justify-content: space-between; /* Равномерное распределение элементов по краям */
+  align-items: center; /* Выравнивание элементов по вертикали по центру */
     flex-wrap: nowrap;
+    height: 86px;
+    background: #eae3d2;
 }
 .logo{
     max-width: 348px; 

@@ -1,24 +1,34 @@
-// AppMy.js (или как вы его назвали)
 import React from 'react';
-import { YmapsProvider, Map, Placemark } from 'react-ymaps';
+import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 import './style.css';
 
-const AppMy = () => {
-  const ymaps = {
-    apikey: 'YOUR_API_KEY', // ЗАМЕНИТЕ ЭТИМ!
-    lang: 'ru_RU',
-    load: 'package.full',
+const AppMap = () => {
+  const mapState = {
+    center: [52.965407, 55.923776],
+    zoom: 18,
+    controls: ['zoomControl', 'fullscreenControl']
   };
 
   return (
     <div className="map-container">
-      <YmapsProvider options={ymaps}>
-        <Map defaultState={{ center: [52.965407, 55.923776], zoom: 18 }} className="ymap">
-          <Placemark geometry={[52.965407, 55.923776]} />
+      <YMaps query={{ apikey: 'ваш-api-ключ', lang: 'ru_RU' }}>
+        <Map 
+          state={mapState}
+          width="100%"
+          height="400px"
+          modules={['control.ZoomControl', 'control.FullscreenControl']}
+        >
+          <Placemark 
+            geometry={[52.965407, 55.923776]}
+            options={{
+              preset: 'islands#redDotIcon',
+              iconColor: '#ff0000'
+            }}
+          />
         </Map>
-      </YmapsProvider>
+      </YMaps>
     </div>
   );
 };
 
-export default AppMy;
+export default AppMap;

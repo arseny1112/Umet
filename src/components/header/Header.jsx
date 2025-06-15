@@ -132,8 +132,6 @@ const BurgerMenu = () => {
                             <ProductLinks onClick={closeMenu} /> {/* Close menu on link click */}
                         </div>
                     )}
-                    <Link to='/services' className='burger-menu__link roboto-reg17' onClick={closeMenu}>Услуги</Link>
-                    <Link to='/contacts' className='burger-menu__link roboto-reg17' onClick={closeMenu}>Контакты</Link>
                 </div>
             </nav>
         </div>
@@ -143,6 +141,7 @@ const BurgerMenu = () => {
 const Header = () => {
     return (
         <div className="wrapper">
+            <header id="main-header">
             <div className="header">
                 <Link to='/'>
                     <img className="logo" src={logo} alt="" />
@@ -170,6 +169,7 @@ const Header = () => {
                 </div>
                 <BurgerMenu />
             </div>
+            </header>
         </div>
     );
 };

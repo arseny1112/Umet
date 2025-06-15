@@ -4,6 +4,7 @@ import img2Production from '../img/product/Production/242a5657ed2b1013cde4840897
 import img3Production from '../img/product/Production/a91e473fb66e3573d40f6b6fda414f3a.png'
 import img4Production from '../img/product/Production/a30876bb53d7bd4e9901c04c3ed0e624.png'
 import img5Production from '../img/product/Production/3b366db2e6447c578b85244c8c2c58b3.png'
+
 const ProductProduction = () => {
     return (
         <div className="wrapper">
@@ -23,7 +24,7 @@ const ProductProduction = () => {
                 <div className="block-productsProduct">
                     <div className="products">
                         <div className="rectangle-products">
-                            <img className="product-img" src={img1Production} alt="" />
+                            <img className="product-img" src={img1Production} alt="1С:Предприятие 8. Ликероводочный и винный завод" />
                         </div>
                         <div className="txt-products">
                             <div className="text-serif16m _h57">1С:Предприятие 8. Ликероводочный и винный завод</div>
@@ -38,7 +39,7 @@ const ProductProduction = () => {
                     </div>
                     <div className="products">
                         <div className="rectangle-products">
-                            <img className="product-img" src={img2Production} alt="" />
+                            <img className="product-img" src={img2Production} alt="1С:Предприятие 8. Мясокомбинат" />
                         </div>
                         <div className="txt-products">
                             <div className="text-serif16m _h57">1С:Предприятие 8. Мясокомбинат</div>
@@ -53,7 +54,7 @@ const ProductProduction = () => {
                     </div>
                     <div className="products">
                         <div className="rectangle-products">
-                            <img className="product-img" src={img3Production} alt="" />
+                            <img className="product-img" src={img3Production} alt="1С:Предприятие 8. Хлебобулочное и кондитерское производство" />
                         </div>
                         <div className="txt-products">
                             <div className="text-serif16m _h57">1С:Предприятие 8. Хлебобулочное и кондитерское производство</div>
@@ -68,7 +69,7 @@ const ProductProduction = () => {
                     </div>
                     <div className="products">
                         <div className="rectangle-products">
-                            <img className="product-img" src={img4Production} alt="" />
+                            <img className="product-img" src={img4Production} alt="1С:Предприятие 8. Пиво-безалкогольный комбинат" />
                         </div>
                         <div className="txt-products">
                             <div className="text-serif16m _h57">1С:Предприятие 8. Пиво-безалкогольный комбинат</div>
@@ -83,7 +84,7 @@ const ProductProduction = () => {
                     </div>
                     <div className="products">
                         <div className="rectangle-products">
-                            <img className="product-img" src={img5Production} alt="" />
+                            <img className="product-img" src={img5Production} alt="1С:Предприятие 8. Рыбопереработка" />
                         </div>
                         <div className="txt-products">
                             <div className="text-serif16m _h57">1С:Предприятие 8. Рыбопереработка</div>
