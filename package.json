@@ -2,7 +2,7 @@
   "name": "dz-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Angelina67e/Server2.git/",
+  "homepage": ".",
   "dependencies": {
     "@pbe/react-yandex-maps": "^1.2.4",
     "@reduxjs/toolkit": "^2.2.1",
@@ -28,8 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "postinstall": "patch-package",
-     "predeploy": "npm run build",
-  "deploy": "gh-pages -b main -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build"
   },
   "resolutions": {
     "react": "^18.3.1",
