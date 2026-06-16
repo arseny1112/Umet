@@ -14,10 +14,6 @@ const Footer = () => {
           <div className="blockFooter">
             <div className="intersemi16 white"></div>
             <div className="list-menuFooter">
-              <a className="interreg16" href="#production"></a>
-              <a className="interreg16" href="#advantages"></a>
-              <a className="interreg16" href="#advantages"></a>
-              <a className="interreg16" href="#advantages"></a>
             </div>
           </div>
           <div className="blockFooter">
