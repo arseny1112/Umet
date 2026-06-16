@@ -1,0 +1,25 @@
+.content2 {
+    display: flex;
+    max-width: 1110px;
+    gap: 30px;
+    margin: 80px auto;
+}
+
+.card1 {
+    gap: 23px;
+    display: grid;
+}
+
+.img__card {
+    width: 255px;
+    height: 255px;
+    background: #e5e5e5;
+}
+
+.intersemi18 {
+    font-family: 'Inter_28pt-SemiBold';
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+}

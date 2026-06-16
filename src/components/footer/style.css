@@ -1,117 +1,57 @@
-/*--------шрифты----------------------------*/
-@font-face {
-    font-family: 'Roboto-Light';
-    src: url(../../fonts/Roboto-Light.ttf);
+.footer {
+    width: 100%;
+    box-shadow: 0 1px 4px 0 rgba(25, 33, 61, 0.08);
+    background: #3a3845;
+    padding: 60px 20px;
+    color: #e5e5e5;
 }
 
-@font-face {
-    font-family: 'Roboto-Medium';
-    src: url(../../fonts/Roboto-Medium.ttf);
-}
-
-@font-face {
-    font-family: 'Roboto-Regular';
-    src: url(../../fonts/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'RobotoSerif-Bold';
-    src: url(../../fonts/RobotoSerif_28pt-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'RobotoSerif-Medium';
-    src: url(../../fonts/RobotoSerif_28pt-Medium.ttf);
-}
-
-/*--------обнуление стилей------------------------------*/
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-ul,
-li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-button {
-    padding: 0;
-}
-
-p {
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/*------------общий блок--------------------------*/
-.wrapper {
-    overflow: hidden;
-    background: #eae3d2;
-    color: #611922;
-}
-
-._container {
-   
+.footerContent {
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: 1.4fr repeat(3, 1fr);
+    gap: 34px;
     margin: 0 auto;
 }
 
-/*------------текст--------------------------*/
-.footer{
-    width: 100%;
-       color: #eae3d2;
-    background: #611922;
-    padding: 60px 0;
-}
-.footerContent{
-    max-width: 1350px;
-    display: flex;
- 
-    justify-content: space-between;
-}
-.logo{
-    max-width: 348px; 
-    height: 86px;
-
+.footer__logo {
+    width: 67px;
+    height: 83px;
 }
 
-.text-serif20b{
- font-family: 'RobotoSerif-Bold';
- font-size: 20px;
-}
-.roboto-reg16{
-    font-family: 'Roboto-Regular';
-    font-size: 16px;
-}
-.list-menuFooter{
+.list-menuFooter {
     margin: 15px 0 0;
     display: grid;
     gap: 10px;
 }
-._text-line{
-text-decoration: underline;
-text-decoration-skip-ink: none;
+
+.list-menuFooter a {
+    transition: opacity 0.2s ease;
 }
-._m40{
-margin: 40px 0 0;
+
+.list-menuFooter a:hover {
+    opacity: 0.75;
+}
+
+@media (max-width: 900px) {
+  .footerContent {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .footer {
+    padding: 42px 18px;
+  }
+
+  .footerContent {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .w300 {
+    width: auto;
+    max-width: 300px;
+  }
 }

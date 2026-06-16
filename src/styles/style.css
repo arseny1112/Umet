@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'EBGaramond-Bold';
+    src: url(../fonts/EBGaramond-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter_28pt-Bold';
+    src: url(../fonts/Inter_28pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter_28pt-Regular';
+    src: url(../fonts/Inter_28pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter_28pt-SemiBold';
+    src: url(../fonts/Inter_28pt-SemiBold.ttf);
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+button, input, textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    color: #3a3845;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.page-loader {
+    min-height: 45vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Inter_28pt-Regular';
+    color: #595667;
+}
+
+.section-anchor {
+    scroll-margin-top: 95px;
+}
+
+.content1 {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/home/flat-lay-composition-different-sized-plates\ 1\ \(2\).png);
+}
+
+.content__block {
+    background: #826f66;
+    padding: clamp(80px, 12vw, 142px) 24px;
+    max-width: 420px;
+    min-height: 520px;
+    text-align: center;
+    gap: 42px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.content__vn {
+    max-width: 1110px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.icon2 {
+    width: 67px;
+    height: 83px;
+    background-image: url(../img/home/image\ 6.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.block-txt {
+    gap: 20px;
+    display: grid;
+}
+
+.interreg16 {
+    font-family: 'Inter_28pt-Regular';
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fffdfb;
+}
+
+.w300 {
+    width: 300px;
+}
+
+.g10 {
+    gap: 15px;
+    display: grid;
+}
+
+.garamond36 {
+    font-family: 'EBGaramond-Bold';
+    font-size: clamp(32px, 5vw, 36px);
+    line-height: 1.12;
+    text-align: center;
+    color: #fffdfb;
+}
+
+.button {
+    padding: 15px 18px;
+    border: none;
+    background: #fff;
+    font-family: 'Inter_28pt-SemiBold';
+    font-size: 14px;
+    text-align: center;
+    color: #826f66;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible,
+.button2:hover,
+.button2:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(58, 56, 69, 0.15);
+}
+
+.content3 {
+    display: flex;
+    max-width: 1110px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.content3.reverse {
+    flex-direction: row-reverse;
+}
+
+.block__info {
+    padding: clamp(40px, 6vw, 64px) clamp(22px, 5vw, 49px);
+    gap: 24px;
+    display: grid;
+    text-align: center;
+    width: 50%;
+    min-height: 380px;
+    align-content: center;
+    justify-items: center;
+    background: #f7f6f5;
+}
+
+.garamond28 {
+    font-family: 'EBGaramond-Bold';
+    font-size: clamp(24px, 4vw, 28px);
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.interb14 {
+    font-family: 'Inter_28pt-Bold';
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    border: none;
+    background: none;
+    color: #3a3845;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    transition: color 0.2s ease;
+}
+
+.interb14:hover,
+.interb14:focus-visible {
+    color: #826f66;
+}
+
+.margin23 {
+    margin: 23px 0 0;
+}
+
+.info__img {
+    width: 50%;
+    min-height: 380px;
+    background-image: url(../img/promoSection/482cb68f-c60e-472d-92cf-bbe4cab756de.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.info__img img {
+    display: block;
+}
+
+.color-grey {
+    color: #595667;
+}
+
+.w459 {
+    max-width: 459px;
+}
+
+.w389 {
+    max-width: 389px;
+}
+
+.content5 {
+    display: grid;
+    max-width: 1110px;
+    gap: 40px;
+    margin: 0 auto;
+}
+
+.content6 {
+    display: grid;
+    max-width: 544px;
+    width: calc(100% - 40px);
+    gap: 24px;
+    text-align: center;
+    justify-items: center;
+    margin: 80px auto;
+}
+
+.intersemi16 {
+    font-family: 'Inter_28pt-SemiBold';
+    font-size: 16px;
+    color: #595667;
+}
+
+.subscribe-form {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    gap: 8px;
+}
+
+.txtmail {
+    border: none;
+    border-bottom: 1px solid #3a3845;
+    padding: 14px 0px;
+    width: min(100%, 389px);
+    height: 44px;
+    font-family: 'Inter_28pt-Regular';
+    font-size: 16px;
+    text-align: center;
+    color: #595667;
+    outline: none;
+}
+
+.txtmail:focus {
+    border-bottom-color: #826f66;
+}
+
+.margin8 {
+    margin: 8px 0 0;
+}
+
+.white {
+    color: #fffdfb;
+}
+
+.animate-section {
+    animation: fadeInUp 0.65s ease both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes modalUp {
+    from {
+        opacity: 0;
+        transform: translateY(22px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 900px) {
+    .content__vn {
+        width: 100%;
+    }
+
+    .content__block {
+        max-width: 100%;
+        min-height: 470px;
+        background: rgba(130, 111, 102, 0.92);
+    }
+
+    .content3,
+    .content3.reverse {
+        flex-direction: column;
+    }
+
+    .block__info,
+    .info__img {
+        width: 100%;
+    }
+
+    .info__img {
+        min-height: 320px;
+        order: -1;
+    }
+}
+
+@media (max-width: 560px) {
+    .content__block {
+        min-height: 420px;
+        padding: 64px 18px;
+    }
+
+    .content3 {
+        width: calc(100% - 28px);
+    }
+
+    .block__info {
+        min-height: auto;
+        padding: 34px 18px;
+    }
+
+    .info__img {
+        min-height: 230px;
+    }
+
+    .content6 {
+        width: calc(100% - 28px);
+        margin: 60px auto;
+    }
+}

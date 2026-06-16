@@ -1,0 +1,134 @@
+.content4 {
+    display: grid;
+    max-width: 1110px;
+    width: calc(100% - 40px);
+    gap: 40px;
+    margin: 80px auto;
+}
+
+.garamond30 {
+    font-family: 'EBGaramond-Bold';
+    font-size: clamp(26px, 4vw, 30px);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.product__card {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.product {
+    gap: 24px;
+    display: grid;
+    min-width: 0;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+}
+
+.product__img {
+    width: 100%;
+    aspect-ratio: 255 / 321;
+    background: #e5e5e5;
+    overflow: hidden;
+}
+
+.product__img img,
+img.product__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.product:hover img.product__img {
+    transform: scale(1.04);
+}
+
+.product__txt {
+    gap: 15px;
+    display: grid;
+}
+
+.block__txt-product1 {
+    gap: 5px;
+    display: grid;
+}
+
+.intersemi14 {
+    font-family: 'Inter_28pt-SemiBold';
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.style-txt {
+    line-height: 143%;
+    color: #3a3845;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.interreg14 {
+    font-family: 'Inter_28pt-Regular';
+    font-size: 14px;
+    line-height: 157%;
+    color: #807f86;
+}
+
+.button2 {
+    border: 1px solid #3a3845;
+    padding: 15px 18px;
+    margin: 14px 0 0;
+    font-family: 'Inter_28pt-SemiBold';
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    background: none;
+    color: #3a3845;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.button2:hover,
+.button2:focus-visible,
+.product--in-cart .button2 {
+    background: #3a3845;
+    color: #fffdfb;
+}
+
+.products-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: 'Inter_28pt-Regular';
+    color: #807f86;
+}
+
+@media (max-width: 1024px) {
+    .product__card {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .product__card {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .content4 {
+        width: calc(100% - 28px);
+        margin: 60px auto;
+    }
+
+    .product__card {
+        grid-template-columns: 1fr;
+    }
+}
